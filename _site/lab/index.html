@@ -1,12 +1,9 @@
----
-title: Keuin 工作室 - Blog
----
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <link rel="shortcut icon" href="../favicon.ico" /> 
-<title>Keuin 工作室 - Blog</title>
+<title>Keuin 工作室 - 实验室</title>
   <link href="../css/metro.css" rel="stylesheet">
   <link href="../css/metro-schemes.css" rel="stylesheet">
   <link href="../css/defstyle.css" rel="stylesheet">
@@ -31,32 +28,6 @@ title: Keuin 工作室 - Blog
     </ul>
 </div>
 
-<div class="listview-outlook" data-role="listview">
-<h1>Keuin's blog</h1>
-<h3>KeuinStudio_Blog</h3>
-<h4>生成:{{ site.time }}</h4>
-<!-文章列表->
-
-{% for post in site.posts %}
-
-{% assign cls='list' %}
-
-{% if forloop.index == 1 %}
-{% assign cls='list marked' %}
-{% endif %}
-
-<a class="{{ cls }}" onclick="window.location.href='..{{ post.url }}';">
-<div class="list-content">
-<span class="list-title">{{ post.title }}</span>
-<span class="list-subtitle">于{{ post.date | date_to_string }} </span>
-<span class="list-remark">{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</span>
-</div>
-</a>
-
-{% endfor %}
-
-<!---------->
-</div>
 
 </body>
 </html>
