@@ -5,7 +5,7 @@ title: Keuin 工作室 - 实验室
 <h1>Laboratory</h1>
 {% for post in site.posts %}
 {% if post.layout == 'projects' %}
-<button class="command-button">
+<button class="command-button" onclick="window.location.href='..{{ post.url }}';">
     {{ post.title }}
     <small>Version: {{ post.currVersion }}, BuildTime: {{ post.buildTime }}</small>
     <small>{{ post.describe }}</small>
