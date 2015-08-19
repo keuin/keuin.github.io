@@ -6,15 +6,16 @@ title: Keuin 工作室 - 博客
 <div class="listview-outlook" data-role="listview">
 <h1>Keuin's blog</h1>
 <!-文章列表->
-
+{% assign i=1 %}
 {% for post in site.posts %}
 
 {% assign cls='list' %}
 
-{% if forloop.index == 1 %}
+{% if i == 1 %}
 {% assign cls='list marked' %}
 {% endif %}
 
+{% if post.layout == 'posts' %}
 <a class="{{ cls }}" onclick="window.location.href='..{{ post.url }}';">
 <div class="list-content">
 <span class="list-title">{{ post.title }}</span>
@@ -22,6 +23,8 @@ title: Keuin 工作室 - 博客
 <span class="list-remark">{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</span>
 </div>
 </a>
+{% assign i=i+1 %}
+{% endif %}
 
 {% endfor %}
 
