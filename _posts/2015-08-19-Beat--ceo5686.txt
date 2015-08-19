@@ -1,5 +1,5 @@
 ---
-layout: products
+layout: projects
 title: Beat-ceo5686(Cpp version)
 describe: “Beat-ceo5686” 小游戏 的C++版本。
 currVersion: Beta 1.3
