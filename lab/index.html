@@ -3,24 +3,13 @@ layout: pages
 title: Keuin 工作室 - 实验室
 ---
 <h1>Laboratory</h1>
-{% assign i=1 %}
 {% for post in site.posts %}
-
-{% assign cls='list' %}
-
-{% if i == 1 %}
-{% assign cls='list marked' %}
-{% endif %}
-
 {% if post.layout == 'projects' %}
-<a class="{{ cls }}" onclick="window.location.href='..{{ post.url }}';">
-<div class="list-content">
-<span class="list-title">{{ post.title }}</span>
-<span class="list-subtitle">于{{ post.date | date_to_string }} </span>
-<span class="list-remark">{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</span>
-</div>
-</a>
-{% assign i=i+1 %}
-{% endif %}
+<button class="button primary">
+<h2>{{ post.title }}</h2>
+<h3>BuildTime: {{ post.buildTime }}</h3>
+<h4>{{ post.describe }}</h4>
+</button>
 
+{% endif %}
 {% endfor %}
