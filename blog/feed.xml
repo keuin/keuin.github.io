@@ -9,7 +9,7 @@ title: RSS Feed
         <title>{{ site.name }}</title>
         <description>{{ site.description }}</description>
         <link>{{ site.baseurl}}{{ site.url }}</link>
-        <atom:link href="{{ site.baseurl}}{{ site.url }}/feed.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="{{ site.baseurl}}{{ site.url }}/blog/feed.xml" rel="self" type="application/rss+xml" />
         {% for post in site.posts %}
         {% if post.layout == 'posts' %}
                 <item>
