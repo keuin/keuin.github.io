@@ -4,5 +4,7 @@ title: Beat-ceo5686(Cpp version)
 describe: “Beat-ceo5686” 小游戏 的C++版本。
 currVersion: Beta 1.3
 buildTime: 20150808.2104
-state: 1
+state: updating
+openSource: true
+downloadUrl: https://copy.com/t8t1cUlCb4JDxemG
 ---
