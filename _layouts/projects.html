@@ -33,12 +33,9 @@
 <h1>{{ page.title }}</h1>
 <h3>{{ page.describe }}</h3>
 <h3>Version: {{ page.currVersion }}, BuildTime: {{ page.buildTime }}</h3>
-{% if page.openSource == 'true' %}
-<h3>源码管理：开源</h3>
-{% else %}
-<h3>源码管理：闭源</h3>
-{% endif %}
-<button class="button" onclick="window.open('{{ page.downloadUrl }}');"><span class="mif-file-download"></span> 下载</button>
+<h3>OpenSource: {{ page.openSource }}</h3>
+<h3>State: {{ page.state }}</h3>
+<a class="button" href="{{ page.downloadUrl }}"><span class="mif-file-download"></span> 下载</a>
 <hr />
 <div id="disqus_thread"></div>
 <script type="text/javascript">
