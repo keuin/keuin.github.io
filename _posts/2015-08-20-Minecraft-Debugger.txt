@@ -1,7 +1,7 @@
 ---
 layout:        projects
-title:         Minecraft µ÷ÊÔÆ÷
-describe:      ·½±ã½â¾öÀëÏßÆô¶¯MinecraftÊ§°ÜµÄÎÊÌâ£¬²¢Ìá¹©¸ü¶àÆô¶¯²ÎÊı¡£
+title:         Minecraft è°ƒè¯•å™¨
+describe:      æ–¹ä¾¿è§£å†³ç¦»çº¿å¯åŠ¨Minecraftå¤±è´¥çš„é—®é¢˜ï¼Œå¹¶æä¾›æ›´å¤šå¯åŠ¨å‚æ•°ã€‚
 currVersion:   1.19
 buildTime:     20150702.2325
 state:         Updating
