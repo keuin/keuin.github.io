@@ -5,6 +5,6 @@ describe:      方便解决离线启动Minecraft失败的问题，并提供更�
 currVersion:   1.19
 buildTime:     20150702.2325
 state:         Updating
-openSource:    FALSE
+isOpenSource:  false
 downloadUrl:   https://copy.com/OzPHOqh7XaaOzTIl
 ---
