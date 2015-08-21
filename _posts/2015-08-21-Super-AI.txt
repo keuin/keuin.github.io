@@ -1,0 +1,10 @@
+---
+layout:        projects
+title:         Super AI
+describe:      一款几乎未命中失败过的人机对话软件
+currVersion:   0.15
+buildTime:     20130812.2101
+state:         Stopped
+isOpenSource:  true
+downloadUrl:   https://copy.com/KzXgPcroMq6Pnr41
+---
