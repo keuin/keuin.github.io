@@ -1,0 +1,10 @@
+---
+layout:        projects
+title:         Minecraft Recorder
+describe:      随时记录你的Minecraft生活，并一键生成展示网站！
+currVersion:   1.60
+buildTime:     20150629.1130
+state:         Updating
+isOpenSource:  false
+downloadUrl:   https://copy.com/dRGw0AXuyJzktcwW
+---
