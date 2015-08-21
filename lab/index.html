@@ -16,12 +16,7 @@ title: Keuin 工作室 - 实验室
         {% assign color = 'danger' %}
     {% endif %}
     <button class="command-button {{ color }}" onclick="window.location.href='..{{ post.url }}';">
-        {% assign iconType = 'mif-file-archive' %}
-        {{ post.openSource }}
-        {% if post.openSource == 'true' %}
-            {% assign iconType = 'mif-file-code' %}
-        {% endif %}
-        <span class="icon {{ iconType }} mif-2x"></span>
+        <span class="icon mif-file-code mif-2x"></span>
         {{ post.title }}
         <small>Version: {{ post.currVersion }}, BuildTime: {{ post.buildTime }}</small>
         <small>{{ post.describe }}</small>
