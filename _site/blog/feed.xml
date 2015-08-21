@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+     <channel>
+        <title>Keuin Studio</title>
+        <description>Keuin 工作室</description>
+        <link>/keuin.github.io</link>
+        <atom:link href="/keuin.github.io/blog/feed.xml" rel="self" type="application/rss+xml" />
+        
+        
+        
+        
+        
+        
+                <item>
+                    <title>Hello, Keuin!</title>
+                    <description>&lt;p&gt;V Host Full再也不能提供稳定的服务了，故“全面地”更新了Keuin 工作室 的网站。&lt;/p&gt;
+&lt;p&gt;新的Blog使用Jekyll进行维护，由GitHub运行。在此感谢无私奉献的开源工作者们！&lt;/p&gt;
+&lt;p&gt;Blog可用HTML或Markdown进行书写。由于没空学习Markdown（其实是懒），暂且采用HTML好了。&lt;/p&gt;</description>
+                    <pubDate>Mon, 10 Aug 2015 00:00:00 +0800</pubDate>
+                    <link>/keuin.github.io/2015/08/10/hello-keuin.html</link>
+                    <guid isPermaLink="true">/keuin.github.io/2015/08/10/hello-keuin.html</guid>
+                    </item>
+        
+        
+     </channel>
+</rss> 
