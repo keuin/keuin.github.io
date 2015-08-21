@@ -1,7 +1,7 @@
 ---
 layout:        projects
 title:         Super AI
-describe:      一款几乎未命中失败过的人机对话软件
+describe:      涓�娆惧嚑涔庢湭鍛戒腑澶辫触杩囩殑浜烘満瀵硅瘽杞欢
 currVersion:   0.15
 buildTime:     20130812.2101
 state:         Stopped

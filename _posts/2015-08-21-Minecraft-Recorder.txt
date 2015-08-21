@@ -1,7 +1,7 @@
 ---
 layout:        projects
 title:         Minecraft Recorder
-describe:      随时记录你的Minecraft生活，并一键生成展示网站！
+describe:      闅忔椂璁板綍浣犵殑Minecraft鐢熸椿锛屽苟涓�閿敓鎴愬睍绀虹綉绔欙紒
 currVersion:   1.60
 buildTime:     20150629.1130
 state:         Updating
