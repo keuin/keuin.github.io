@@ -31,7 +31,7 @@
 
 <!-正文->
 <h1>{{ page.title }}</h1>
-<h3>{{ page.describe }}</h3>
+<h3>用途: {{ page.describe }}</h3>
 <h3>当前版本: {{ page.currVersion }}, 构建日期: {{ page.buildTime }}</h3>
 <h3>开放源码: {% if page.isOpenSource == true %}是{% else %}否{% endif %}</h3>
 <h3>开发状态: {% if page.state == 'Updating' %}更新中{% endif %}{% if page.state == 'Pause' %}仅关键更新{% endif %}{% if page.state == 'Stopped' %}已弃坑{% endif %}</h3>

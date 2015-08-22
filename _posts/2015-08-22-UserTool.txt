@@ -1,7 +1,7 @@
 ---
 layout:        projects
 title:         账户工具
-describe:      隐藏在Windows XP下的某一账户。由于年代久远，源码已丢失，故无法开源。
+describe:      本程序可隐藏在Windows XP下的某一账户。由于年代久远，源码已丢失，故无法开源。
 currVersion:   1.3
 buildTime:     20130601.1517
 state:         Stopped
