@@ -1,0 +1,10 @@
+---
+layout:        projects
+title:         Fast MessageBox 聊天室
+describe:      我的第一个较大程序，两年前弃坑，现提供少量维护。
+currVersion:   1.41
+buildTime:     20130211.1558
+state:         Pause
+isOpenSource:  true
+downloadUrl:   https://copy.com/ibVsXGsfWcqjAQKC
+---
