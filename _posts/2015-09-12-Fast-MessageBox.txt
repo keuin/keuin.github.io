@@ -1,7 +1,7 @@
 ---
 layout:        projects
-title:         Fast MessageBox ÁÄÌìÊÒ
-describe:      ÎÒµÄµÚÒ»¸ö½Ï´ó³ÌĞò£¬Á½ÄêÇ°Æú¿Ó£¬ÏÖÌá¹©ÉÙÁ¿Î¬»¤¡£
+title:         Fast MessageBox èŠå¤©å®¤
+describe:      æˆ‘çš„ç¬¬ä¸€ä¸ªè¾ƒå¤§ç¨‹åºï¼Œä¸¤å¹´å‰å¼ƒå‘ï¼Œç°æä¾›å°‘é‡ç»´æŠ¤ã€‚
 currVersion:   1.41
 buildTime:     20130211.1558
 state:         Pause
