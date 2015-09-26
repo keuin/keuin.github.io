@@ -4,7 +4,7 @@ title: Keuin 工作室 - 博客
 ---
 
 <div class="listview-outlook" data-role="listview">
-<h1><span class="mif-pencil"></span> Keuin's blog</h1>
+<h1><span class="mif-pencil"></span> 碎语</h1>
 <!-文章列表->
 {% assign i=1 %}
 {% for post in site.posts %}
@@ -16,7 +16,7 @@ title: Keuin 工作室 - 博客
 {% endif %}
 
 {% if post.layout == 'posts' %}
-<a class="{{ cls }}" onclick="window.location.href='..{{ post.url }}';">
+<a class="{{ cls }}" href="#" onclick="window.location.href='..{{ post.url }}';">
 <div class="list-content">
 <span class="list-title">{{ post.title }}</span>
 <span class="list-subtitle">于{{ post.date | date_to_string }} </span>

@@ -31,10 +31,10 @@
 
 <!-正文->
 <h1>{{ page.title }}</h1>
-<h3>用途: {{ page.describe }}</h3>
-<h3>当前版本: {{ page.currVersion }}, 构建日期: {{ page.buildTime }}</h3>
-<h3>开放源码: {% if page.isOpenSource == true %}是{% else %}否{% endif %}</h3>
-<h3>更新状态: {% if page.state == 'Updating' %}更新中{% endif %}{% if page.state == 'Pause' %}仅关键更新{% endif %}{% if page.state == 'Stopped' %}已弃坑{% endif %}</h3>
+<h3>描述：{{ page.describe }}</h3>
+<h3>当前版本：{{ page.currVersion }}, 构建日期：{{ page.buildTime }}</h3>
+<h3>开放源码：{% if page.isOpenSource == true %}是{% else %}否{% endif %}</h3>
+<h3>更新状态：{% if page.state == 'Updating' %}更新中{% endif %}{% if page.state == 'Pause' %}仅关键更新{% endif %}{% if page.state == 'Stopped' %}已弃坑{% endif %}</h3>
 <a class="button" href="{{ page.downloadUrl }}" target="_blank"><span class="mif-file-download"></span> 获取</a>
 <br />
 <div id="disqus_thread"></div>
