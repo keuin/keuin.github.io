@@ -1,0 +1,10 @@
+---
+layout:        projects
+title:         (Cpp Version)FileCat
+describe:      用控制台窗口逐行阅读小说
+currVersion:   1.0
+buildTime:     20151001.2203
+state:         Updating
+isOpenSource:  true
+downloadUrl:   https://copy.com/DYhfsbqdKEldfxW8
+---
