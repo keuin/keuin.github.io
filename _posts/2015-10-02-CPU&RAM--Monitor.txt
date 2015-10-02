@@ -1,0 +1,10 @@
+---
+layout:        projects
+title:         (Cpp Version)(Linux)CPU&RAM Monitor
+describe:      一个记录CPU和RAM使用率为txt文件的程序。
+currVersion:   1.1
+buildTime:     151002.211649
+state:         Updating
+isOpenSource:  true
+downloadUrl:   https://copy.com/vVP2woYbZlELF7qG
+---
