@@ -6,5 +6,6 @@ currVersion:   1.19
 buildTime:     20150702.2325
 state:         Pause
 isOpenSource:  false
+dlID:          2
 downloadUrl:   https://copy.com/OzPHOqh7XaaOzTIl
 ---

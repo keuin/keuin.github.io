@@ -6,5 +6,6 @@ currVersion:   0.15
 buildTime:     20130812.2101
 state:         Stopped
 isOpenSource:  true
+dlID:          4
 downloadUrl:   https://copy.com/KzXgPcroMq6Pnr41
 ---

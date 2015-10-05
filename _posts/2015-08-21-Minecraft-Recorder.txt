@@ -6,5 +6,6 @@ currVersion:   1.60
 buildTime:     20150629.1130
 state:         Updating
 isOpenSource:  false
+dlID:          3
 downloadUrl:   https://copy.com/dRGw0AXuyJzktcwW
 ---

@@ -6,5 +6,6 @@ currVersion:   1.41
 buildTime:     20130211.1558
 state:         Pause
 isOpenSource:  true
+dlID:          6
 downloadUrl:   https://copy.com/ibVsXGsfWcqjAQKC
 ---

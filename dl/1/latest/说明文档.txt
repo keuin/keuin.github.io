@@ -1,0 +1,6 @@
+HP:血量(当前/最大)
+MP:魔法(同上)
+ATT:攻击力(att*attBuf,例如:攻击力为5,attack buff为3，则ATT 5*3)
+See Details:查看技能详情
+Use Skill:在当前回合释放技能
+Bye:退出游戏
