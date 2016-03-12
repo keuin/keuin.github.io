@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="shortcut icon" href="{{ site.url }}/favicon.ico" /> 
+<title>Keuin 工作室 - {{ page.title }}</title>
+{% include UI %}
+</head>
+<body>
+{% include headbar %}
+<!-正文->
+<h1>{{ page.title }}</h1>
+<h3>于{{ page.date | date_to_string }}</h3>
+<br />
+{{ content }}
+<br />
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'keuinx';
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+</body>
+</html>

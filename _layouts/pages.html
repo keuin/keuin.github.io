@@ -1,34 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<link rel="shortcut icon" href="{{ site.url }}/favicon.ico" /> 
+{% include basicData %}
 <title>{{ page.title }}</title>
-  <link href="{{ site.url }}/css/metro.css" rel="stylesheet">
-  <link href="{{ site.url }}/css/metro-schemes.css" rel="stylesheet">
-  <link href="{{ site.url }}/css/defstyle.css" rel="stylesheet">
-  <link href="{{ site.url }}/css/metro-icons.css" rel="stylesheet">
-  <script src="{{ site.url }}/js/jquery.js"></script>
-  <script src="{{ site.url }}/js/metro.js"></script>
+{% include UI %}
 </head>
 <body>
-<div class="app-bar darcula" data-role="appbar">
-    <a class="app-bar-element branding" href="{{ site.url }}/">Keuin 工作室</a>
-    <span class="app-bar-divider"></span>
-    <ul class="app-bar-menu">
-        <li><a href="{{ site.url }}/log">维护日志</a></li>
-        <li><a href="{{ site.url }}/blog">博客</a></li>
-        <li><a href="{{ site.url }}/lab">实验室</a></li>
-        <li><a href="{{ site.url }}/opencraft">Opencraft!</a></li>
-        <li><a class="dropdown-toggle">朋友们</a>
-            <ul class="d-menu" data-role="dropdown">
-                <li><a href="http://mygod.tk" target="_blank">Mygod</a></li>
-                <li><a href="http://ceo5686web.tk" target="_blank">ceo5686</a></li>
-            </ul>
-        </li>
-        <li><a href="{{ site.url }}/about">关于我</a></li>
-    </ul>
-</div>
+{% include headbar %}
 <!-正文->
 {{ content }}
 </body>

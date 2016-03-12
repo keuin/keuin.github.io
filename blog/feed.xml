@@ -22,4 +22,4 @@ title: RSS Feed
         {% endif %}
         {% endfor %}
      </channel>
-</rss> 
+</rss>

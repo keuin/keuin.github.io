@@ -1,10 +1,10 @@
 ---
 layout: pages
-title: Keuin 工作室 - 博客
+title: Keuin 工作室 - Blog
 ---
 
 <div class="listview-outlook" data-role="listview">
-<h1>闲言碎语</h1>
+<h1>Blog</h1>
 <!-文章列表->
 {% assign i=1 %}
 {% for post in site.posts %}
@@ -14,13 +14,13 @@ title: Keuin 工作室 - 博客
 {% if i == 1 %}
 {% assign cls='list marked' %}
 {% endif %}
-
+	
 {% if post.layout == 'posts' %}
-<a class="{{ cls }}" href="#" onclick="window.location.href='..{{ post.url }}';">
+<a class="{{ cls }}" href="{{ site.url }}{{ post.url }}" onclick="self.location='{{ site.url }}{{ post.url }}';" target="_blank">
 <div class="list-content">
 <span class="list-title">{{ post.title }}</span>
-<span class="list-subtitle">于{{ post.date | date_to_string }} </span>
-<span class="list-remark">{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</span>
+<span class="list-subtitle">于{{ post.date | date: "%Y-%m-%d" }}</span>
+<span class="list-remark">{{ post.excerpt | strip_html }}</span>
 </div>
 </a>
 {% assign i=i+1 %}

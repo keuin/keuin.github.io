@@ -2,7 +2,7 @@
 layout: pages
 title: Keuin 工作室 - 实验室
 ---
-<h1>实验品们</h1>
+<h1>实验室</h1>
 {% for post in site.posts %}
 {% if post.layout == 'projects' %}
     {% assign color = '' %}
@@ -23,7 +23,7 @@ title: Keuin 工作室 - 实验室
         {% endif %}
         <span class="icon {{ iconType }} mif-2x"></span>
         {{ post.title }}
-        <small>版本：{{ post.currVersion }}, 构建日期：{{ post.buildTime }}</small>
+        <small>版本：{{ post.currVersion }}, 最近更新：{{ post.buildTime }}</small>
         <small>{{ post.describe }}</small>
     </button>
     <br />
