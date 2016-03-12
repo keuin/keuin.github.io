@@ -5,17 +5,21 @@ changeTime: 2016-01-01 08:10:10
 ---
 
 由于众所周知的原因，在大陆访问Google需要跨栏。但是每次搜索都要启动跨栏软件有点不方便。下面介绍一种使用Openshift来跨栏的方法。首先是效果图：
+  
 ![Chrome + Gogole](http://images2015.cnblogs.com/blog/585442/201601/585442-20160101085838026-457015255.png)
+  
 点击搜索结果会跳出代理：
+  
 ![Chrome + Google + WOW64](http://images2015.cnblogs.com/blog/585442/201601/585442-20160101085908698-1993570021.png)
+  
 步骤：
-
+  
 一、准备空间：在WEB CONSOLE里创建一个DIY项目，使用SSH登录到后台。
-
+  
 二、编译Nginx：从nginx.org上wget下来，tar zxvf解包，同时准备ngx_cache_purge和pcre，和nginx一起放在$OPENSHIFT_DATA_DIR里，解包并编译。
-
+  
 三、配置代理：编辑conf/nginx.conf，我的配置文档如下：
-
+  
 {% highlight YAML %}
 #user nobody;
 worker_processes 1;
@@ -86,7 +90,7 @@ http {
 }
 }
 {% endhighlight %}
-
+  
 其中，XXX.rhcloud.com请自行替换为你的地址。
-
+  
 四、大功告成：执行sbin/nginx来测试，如果不能运行，请根据日志调试。如果正常运行，可将其加入自启动中，这里不再赘述。
