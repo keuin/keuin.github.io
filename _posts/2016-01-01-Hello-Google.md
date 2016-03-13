@@ -91,6 +91,6 @@ http {
 }
 {% endhighlight %}
   
-其中，XXX.rhcloud.com请自行替换为你的地址。
+其中，`XXX.rhcloud.com`请自行替换为你的地址。
   
 四、大功告成：执行sbin/nginx来测试，如果不能运行，请根据日志调试。如果正常运行，可将其加入自启动中，这里不再赘述。
