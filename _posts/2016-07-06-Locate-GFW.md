@@ -3,6 +3,7 @@ layout: posts
 title: 追寻长城的足迹
 changeTime: 2016-07-06 12:51:38
 ---
+
 ##什么是长城？
 >长城（万里长城），是古代中国为抵御不同时期塞北游牧部落联盟的侵袭，修筑规模浩大的军事工程的统称。长城东西绵延上万华里，因此又称作万里长城。现存的长城遗迹主要为始建于14世纪的明长城，西起嘉峪关，东至虎山长城，长城遗址跨越北京、天津、青海、山西、内蒙等15个省市自治区，总计有43721处长城遗产，长城也是自人类文明以来最巨大的单一建筑物。 （摘自中文维基百科）
 
@@ -17,9 +18,7 @@ GFW可以帮助你无法访问一些“不和谐”的外国网站，审查你�
 ##你能不能别废话了快点给我定位长城！
 
 要定位长城，我首先想到了tracert（trace route）命令。启动你的机器，在cmd或bash下敲入
-```
-trace google.com
-```
+    trace google.com
 就可以追踪你到达Google服务器所经过的路由了。下面是我得到的结果：
 ![tracert facebook](http://images.cnblogs.com/cnblogs_com/keuin/849513/o_tracert_facebook.png "Tracert on Facebook")
 ![tracert google 1](http://images.cnblogs.com/cnblogs_com/keuin/849513/o_tracert_google.png "Tracert on Google")
