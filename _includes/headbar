@@ -15,7 +15,7 @@
     </ul>
     {% if page.showRSS == true %}
     <ul class="app-bar-menu place-right">
-    <li><a href="{{ site.url }}/blog/feed.xml">RSS Feed</a></li>
+    <li><a href="{{ site.url }}/blog/feed.xml"><span class="mif-feed3"></span>RSS Feed</a></li>
     </ul>
     {% endif %}
 </div>

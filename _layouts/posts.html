@@ -1,6 +1,3 @@
----
-showRSS: true
----
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,6 +6,7 @@ showRSS: true
 {% include UI %}
 </head>
 <body>
+{% assign page.showRSS = true %}
 {% include headbar %}
 <a class="button" href="{{ site.url }}/blog">文章列表</a>
 <h1>{{ page.title }}</h1>
