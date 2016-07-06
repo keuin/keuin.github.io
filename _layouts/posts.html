@@ -36,7 +36,7 @@
     {% assign aaa = ' disabled' %}
 {% endif %}
 {% if isLast == false %}
-    {% assign urlb = site.posts[lastPost+1].url %}
+    {% assign urlb = site.posts[lastPost-1].url %}
 {% endif %}
 <button class="button"{{ aaa }} onclick="self.location='{{ site.urk }}{{ urlb }}'">下一篇</button>
 <h1>{{ page.title }}</h1>
