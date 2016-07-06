@@ -4,25 +4,25 @@ title: 追寻长城的足迹
 changeTime: 2016-07-06 12:51:38
 ---
 
-##什么是长城？
->长城（万里长城），是古代中国为抵御不同时期塞北游牧部落联盟的侵袭，修筑规模浩大的军事工程的统称。长城东西绵延上万华里，因此又称作万里长城。现存的长城遗迹主要为始建于14世纪的明长城，西起嘉峪关，东至虎山长城，长城遗址跨越北京、天津、青海、山西、内蒙等15个省市自治区，总计有43721处长城遗产，长城也是自人类文明以来最巨大的单一建筑物。 （摘自中文维基百科）
+## 什么是长城？
+> 长城（万里长城），是古代中国为抵御不同时期塞北游牧部落联盟的侵袭，修筑规模浩大的军事工程的统称。长城东西绵延上万华里，因此又称作万里长城。现存的长城遗迹主要为始建于14世纪的明长城，西起嘉峪关，东至虎山长城，长城遗址跨越北京、天津、青海、山西、内蒙等15个省市自治区，总计有43721处长城遗产，长城也是自人类文明以来最巨大的单一建筑物。 （摘自中文维基百科）
 
-##长城有什么作用？
+## 长城有什么作用？
 在历史课本上，我们学到的长城主要被用来抵御入侵。现在有了另一个“长城”，也是本文要介绍的——the Great Fire Wall（GFW）。
 GFW可以帮助你无法访问一些“不和谐”的外国网站，审查你的跨国电子邮件内容，并选择性地屏蔽带有敏感关键字的邮件（[这里](http://www.5dmail.net/bbs/thread-157760-1-1.html)有一些实例）。
 
 
-##怎样判断我是否正被长城保护？
+## 怎样判断我是否正被长城保护？
 我们可以根据长城的表现来查看。例如访问[一些不存在的网站](http://tieba.baidu.com/p/1883932722)，如果你的浏览器告诉你无法打开，哈哈恭喜你，你被保护了。
 
-##你能不能别废话了快点给我定位长城！
+## 你能不能别废话了快点给我定位长城！
 
 要定位长城，我首先想到了tracert（trace route）命令。启动你的机器，在cmd或bash下敲入
     trace google.com
 就可以追踪你到达Google服务器所经过的路由了。下面是我得到的结果：
-![tracert facebook](http://images.cnblogs.com/cnblogs_com/keuin/849513/o_tracert_facebook.png "Tracert on Facebook")
-![tracert google 1](http://images.cnblogs.com/cnblogs_com/keuin/849513/o_tracert_google.png "Tracert on Google")
-![tracert google 2](http://images.cnblogs.com/cnblogs_com/keuin/849513/o_tracert_google2.png "Tracert on Google 2")
+![tracert facebook](http://images2015.cnblogs.com/blog/585442/201607/585442-20160706130809327-1088559913.png "Tracert on Facebook")
+![tracert google 1](http://images2015.cnblogs.com/blog/585442/201607/585442-20160706130819280-1423107610.png "Tracert on Google")
+![tracert google 2](http://images2015.cnblogs.com/blog/585442/201607/585442-20160706130824202-503733995.png "Tracert on Google 2")
 
 很明显，将要到达google.com和facebook.com的ICMP包都被截断了。tracert命令不断地尝试，在积累了30条后终止运行。
 观察三个结果，我们发现：在第一个超时前面的那个地址总是202.97.\*.\*。这样，我们就完全有理由怀疑这个地址对应的主机就是GFW的出口服务器。当数据包转到它手里时，GFW会对数据包进行关键字检查和目标主机检查。很快它发现：我们的请求目标是Google主站，这受GFW屏蔽。于是，它采取了一系列手段来阻止我们的通讯，那个ICMP包沉入大海，再也没能到达目标主机。
@@ -38,10 +38,10 @@ GFW可以帮助你无法访问一些“不和谐”的外国网站，审查你�
 * 本地 -> 本市 -> 辽宁（或北京） -> 北京（x3） -> （超时）
 * 本地 -> 本市 -> 辽宁（或北京） -> 北京（x2） -> 上海 -> （超时）
 
-##得出结论
+## 得出结论
 三次测试所达到的最后的地理地址为北京和伤害，而且两次测试都出现数据包在那里转悠的现象。所以：**GFW在上海和北京有服务器**。
 
-##参考链接
+## 参考链接
 * [百度贴吧：一些被封锁的网站](http://tieba.baidu.com/p/1883932722)
 * [论坛：邮件551错误](http://www.5dmail.net/bbs/thread-157760-1-1.html)
 * [定位GFW的Python脚本](http://www.freebuf.com/news/others/6494.html)
