@@ -7,8 +7,7 @@
 </head>
 <body>
 {% include headbar %}
-
-<a class="button" href="{{ site.url }}/blog">文章列表</a>
+<!--
 {% assign i = 1 %}
 {% assign isLast = true %}
 {% assign lastPost=i %}
@@ -38,7 +37,35 @@
 {% if isLast == true %}
     {% assign aaa = ' disabled' %}
 {% endif %}
+-->
+{% assign isLast = false %}
+{% assign isBegin = true %}
+{% for post in site.posts %}
+    {% assign isLast = false %}
+    {% if post.layout == 'posts' %}
+        {% if post.url == page.url %}
+            {% assign i = forloop.index0 %}
+            {% assign up = i+1 %}
+            {% assign down = i-1 %}
+            {% assign url_up = site.posts[up].url %}
+            {% assign url_down = site.posts[down].url %}
+            {% assign isLast = true %}
+            {% if forloop.index == 1 %}
+                {% assign isBegin = true %}
+            {% endif %}
+        {% endif %}
+    {%endif%}
+{% endfor %}
 
+{% if isBegin == true %}
+    {%assign sig_up = 'disabled' %}
+{% endif %}
+{% if isLast == true %}
+    {%assign sig_down = 'disabled' %}
+{% endif %}
+<a class="button" href="{{ site.url }}/blog">文章列表</a>
+<button class="button" {{ sign_up }} onclick="self.location='{{ site.url }}{{ url_up }}'">上一篇</button>
+<button class="button" {{ sign_down }} onclick="self.location='{{ site.url }}{{ url_down }}'">下一篇</button>
 <h1>{{ page.title }}</h1>
 <h3>于{{ page.date | date: "%Y-%m-%d" }}</h3>
 <br />
