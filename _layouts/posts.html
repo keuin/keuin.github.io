@@ -13,6 +13,9 @@
 {% assign isLast = true %}
 {% assign lastPost=i %}
 {% for post in site.posts %}
+{% if site.posts[i].url == site.url %}
+{% assign urlb = site.posts[i-1].url %}
+{% endif %}
 {% if post.layout == 'posts' %}
   {% assign isLast = false %}
   {% if post.url == page.url %}
@@ -33,9 +36,6 @@
 {% assign aaa = ' ' %}
 {% if isLast == true %}
 {% assign aaa = ' disabled' %}
-{% endif %}
-{% if isLast == false %}
-{% assign urlb = site.posts[lastPost].url %}
 {% endif %}
 <button class="button"{{ aaa }} onclick="self.location='{{ site.url }}{{ urlb }}'">下一篇</button>
 <h1>{{ page.title }}</h1>
