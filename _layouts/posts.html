@@ -12,6 +12,7 @@
 {% assign i = 1 %}
 {% assign isLast = true %}
 {% assign lastPost=i %}
+{% assign nextPost=i %}
 {% for post in site.posts %}
     {% if post.layout == 'posts' %}
         {% assign isLast = false %}
@@ -24,21 +25,20 @@
             {% if i != 1 %}
                 {% assign urll = site.posts[lastPost].url %}
             {% endif %}
+            {% assign urlb = site.posts[nextPost].url %}
             <button class="button"{{ sig }} onclick="self.location='{{ site.url }}{{ urll }}'">上一篇</button>
+            <button class="button"{{ aaa }} onclick="self.location='{{ site.urk }}{{ urlb }}'">下一篇</button>
         {% endif %}
         {% assign i=i+1 %}
         {% assign lastPost=forloop.index0 %}
+        {% assign nextPost=forloop.index0+1 %}
     {% endif %}
 {% endfor %}
-
 {% assign aaa = ' ' %}
 {% if isLast == true %}
     {% assign aaa = ' disabled' %}
 {% endif %}
-{% if isLast == false %}
-    {% assign urlb = site.posts[lastPost-1].url %}
-{% endif %}
-<button class="button"{{ aaa }} onclick="self.location='{{ site.urk }}{{ urlb }}'">下一篇</button>
+
 <h1>{{ page.title }}</h1>
 <h3>于{{ page.date | date: "%Y-%m-%d" }}</h3>
 <br />
