@@ -1,4 +1,5 @@
 name: Keuin Studio
 description: Keuin 工作室
 email: keuinx@gmail.com
-markdown: kramdown
+markdown: redcarpet
+highlighter: pygments

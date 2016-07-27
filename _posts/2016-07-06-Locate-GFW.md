@@ -18,9 +18,7 @@ GFW可以帮助你无法访问一些“不和谐”的外国网站，审查你�
 
 ## 你能不能别废话了快点给我定位长城！
 
-要定位长城，我首先想到了tracert（trace route）命令。启动你的机器，在cmd或bash下敲入
-    trace google.com
-就可以追踪你到达Google服务器所经过的路由了。下面是我得到的结果：
+要定位长城，我首先想到了tracert（trace route）命令。启动你的机器，在cmd或bash下敲入`trace google.com`就可以追踪你到达Google服务器所经过的路由了。下面是我得到的结果：
 
 ![tracert facebook](http://images2015.cnblogs.com/blog/585442/201607/585442-20160706130809327-1088559913.png "Tracert on Facebook")
 
