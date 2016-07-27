@@ -1,7 +1,7 @@
 ---
 layout: posts
 title: 使用Openshift+Nginx代理Google实现方便跨栏
-changeTime: 2016-01-01 08:10:10
+createTime: 2016-01-01 08:10:10
 ---
 
 由于众所周知的原因，在大陆访问Google需要跨栏。但是每次搜索都要启动跨栏软件有点不方便。下面介绍一种使用Openshift来跨栏的方法。首先是效果图：

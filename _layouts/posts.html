@@ -10,7 +10,9 @@
 {% include headbar %}
 <a class="button" href="{{ site.url }}/blog">文章列表</a>
 <h1>{{ page.title }}</h1>
-<h3>于{{ page.date | date: "%Y-%m-%d" }}</h3>
+<!--<h5>于{{ page.date | date: "%Y-%m-%d" }}</h5>-->
+<h5>{{ page.createTime | date: "%Y-%m-%d" }} 创建</h5>
+<h5>{{ page.modifyTime | date: "%Y-%m-%d" }} 修改</h5>
 <br />
 <br />
 <!-正文->

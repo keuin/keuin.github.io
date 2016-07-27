@@ -1,7 +1,8 @@
 ---
 layout: posts
 title: 追寻长城的足迹
-changeTime: 2016-07-06 12:51:38
+createTime: 2016-07-06 12:51:38
+modifyTime: 2016-07-27 15:55:19
 ---
 
 ## 什么是长城？
@@ -20,8 +21,11 @@ GFW可以帮助你无法访问一些“不和谐”的外国网站，审查你�
 要定位长城，我首先想到了tracert（trace route）命令。启动你的机器，在cmd或bash下敲入
     trace google.com
 就可以追踪你到达Google服务器所经过的路由了。下面是我得到的结果：
+
 ![tracert facebook](http://images2015.cnblogs.com/blog/585442/201607/585442-20160706130809327-1088559913.png "Tracert on Facebook")
+
 ![tracert google 1](http://images2015.cnblogs.com/blog/585442/201607/585442-20160706130819280-1423107610.png "Tracert on Google")
+
 ![tracert google 2](http://images2015.cnblogs.com/blog/585442/201607/585442-20160706130824202-503733995.png "Tracert on Google 2")
 
 很明显，将要到达google.com和facebook.com的ICMP包都被截断了。tracert命令不断地尝试，在积累了30条后终止运行。
