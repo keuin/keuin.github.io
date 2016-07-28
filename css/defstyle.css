@@ -1,1 +1,7 @@
 h1,h2,h3,h4{font-weight:normal;}
+p{
+text-indent: 2em; /*首行缩进*/
+}
+/*body{
+margin:1em 1em 1em 1em; /*页边留白*/
+}*/
