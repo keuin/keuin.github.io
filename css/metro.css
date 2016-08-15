@@ -150,11 +150,15 @@ a {
   img {
     max-width: 100%;
   }
-  p,
+  p {
+    text-align: justify;
+    word-wrap: break-word;
+  }
   h2,
   h3 {
     orphans: 3;
     widows: 3;
+    page-break-after: avoid;
   }
   h2,
   h3 {

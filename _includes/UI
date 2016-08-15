@@ -1,4 +1,4 @@
-<meta name="viewport" content="width=device-width, initial-scale=1"> <!-响应式->
+<meta name="viewport" content="width=device-width, user-scalable=no initial-scale=1" />
 <link href="{{ site.url }}/css/codeStyle.css" rel="stylesheet">
 <link href="{{ site.url }}/css/metro.css" rel="stylesheet">
 <link href="{{ site.url }}/css/metro-schemes.min.css" rel="stylesheet">
