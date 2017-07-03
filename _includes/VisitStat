@@ -1,11 +1,9 @@
-<div style="display:none">
 <script>
 var _hmt = _hmt || [];
 (function() {
   var hm = document.createElement("script");
-  hm.src = "//hm.baidu.com/hm.js?d833188058002f9f5a5f7abc61b6ecaa";
+  hm.src = "https://hm.baidu.com/hm.js?c842c655ca77f74b372e23831b21465f";
   var s = document.getElementsByTagName("script")[0]; 
   s.parentNode.insertBefore(hm, s);
 })();
 </script>
-</div>
