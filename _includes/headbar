@@ -7,7 +7,7 @@
         <li><a href="{{ site.url }}/lab">实验室</a></li>
         <li><a class="dropdown-toggle">朋友们</a>
             <ul class="d-menu" data-role="dropdown">
-                <li><a href="https://mygod.tk" target="_blank">Mygod</a></li>
+                <li><a href="https://mygod.be" target="_blank">Mygod</a></li>
                 <li><a href="http://ceo5686web.tk" target="_blank">ceo5686（已死）</a></li>
             </ul>
         </li>
